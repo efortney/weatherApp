@@ -63,3 +63,8 @@ body {
   margin: auto;
   text-align: center;
 }
+
+.footerContainer {
+  text-align: center;
+  padding: 12px;
+}
