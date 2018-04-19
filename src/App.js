@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import SearchBar from './components/search_bar';
 import Header from './components/header';
 import CityData from './components/city_details';
+import Footer from './components/footer';
 import _ from 'lodash'
 
 class App extends Component {
@@ -50,6 +51,7 @@ class App extends Component {
         < hr />
         <SearchBar  onSearchTermChange = {search}/>
         <CityData json = {this.state.json} />
+        <Footer />
       </div>
     );
 
