@@ -24,7 +24,7 @@ class App extends Component {
 
   // performs the request to get JSON data from weather underground's API 
   search(state,city) {
-    const url = 'httpsß://api.wunderground.com/api/c48caab7753ace0d/geolookup/conditions/q/' + state + '/' + city + '.json';
+    const url = 'https://api.wunderground.com/api/c48caab7753ace0d/geolookup/conditions/q/' + state + '/' + city + '.json';
     fetch(url)
       .then((resp) => resp.json())
         .then( (json ) => {
