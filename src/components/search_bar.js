@@ -12,7 +12,7 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="searchBar">
-                <input value = {this.state.term} className="search" placeholder="Oakland, Ca"
+                <input value = {this.state.term} className="search" placeholder="Kansas City, Mo"
                 onChange= {event => this.onInputChange(event.target.value)}
                 />
             </div>
