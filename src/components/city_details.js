@@ -17,14 +17,14 @@ const CityDetails = ({json}) => {
             <div className="row">
                     <div className="col-md-12 text-center">
                      <h2 className="summary"> Details for {json.current_observation.display_location.full}</h2>
-                    <img class="cardImage" src={json.current_observation.icon_url} alt="Card image cap" />
+                    <img class="cardImage" src={json.current_observation.icon_url} alt="Card  cap" />
                         <div class="card-body">
                         < hr />
                             <h5 class="card-title">Weather Report</h5>
-                            <p>Temp: {json.current_observation.temp_f} F</p>
-                            <p>Rain: {json.current_observation.precip_today_in}" accumlated today</p>
-                            <p>Sky Condition: {json.current_observation.weather}</p>
-                            <p>Wind: {json.current_observation.wind_string} </p>
+                            <p>It's currently {json.current_observation.temp_f} F</p>
+                            <p>{json.current_observation.precip_today_in}" of rain accumlated today</p>
+                            <p>Sky Conditions are {json.current_observation.weather}</p>
+                            <p>Wind is {json.current_observation.wind_string} </p>
                             <p>Feels like: {json.current_observation.feelslike_f} F </p>
                             <h2>{summary}</h2>
                         </div>
@@ -76,8 +76,12 @@ function createSummary({json}) {
         summary = "It could be snowing today, better dress warm!";
     }
 
-    if(json.current_observation.feelslike_f > 68) {
+    if(json.current_observation.feelslike_f > 75) {
         summary = "It's a hot one today."
+    }
+
+    if(cold) {
+        summary = "It's a chilly day out, be sure to bring a jacket!";
     }
 
     else {
