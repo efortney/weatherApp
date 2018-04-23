@@ -20,7 +20,7 @@ class App extends Component {
     this.search('Mo','Kansas City')
     
   }//end of constructor 
-
+  
 
   // performs the request to get JSON data from weather underground's API 
   search(state,city) {
