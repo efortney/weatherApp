@@ -8,4 +8,4 @@ Search for cities by using an english like syntax. City, State.
 IE: Kansas City, MO
 IE: Dallas, Texas
 
-To try a live version of the app, go to http://csc346-weather-app.herokuapp.com/
+To try a live version of the app, go to https://csc346-weather-app.herokuapp.com/
