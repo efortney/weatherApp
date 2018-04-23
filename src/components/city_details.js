@@ -15,7 +15,7 @@ const CityDetails = ({json}) => {
     return (
         <div className="cityData container text-center">
             <div className="row">
-                    <div className="card col-md-12 text-center">
+                    <div className="col-md-12 text-center">
                      <h2 className="summary"> Details for {json.current_observation.display_location.full}</h2>
                     <img class="cardImage" src={json.current_observation.icon_url} alt="Card image cap" />
                         <div class="card-body">
